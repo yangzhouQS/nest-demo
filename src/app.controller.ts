@@ -1,5 +1,15 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Header,
+  HttpCode,
+  Post,
+  Query,
+  Req,
+} from '@nestjs/common';
 import { AppService } from './app.service';
+import { Request } from 'express';
 
 @Controller()
 export class AppController {
@@ -19,10 +29,20 @@ export class AppController {
     };
   }
 
-  @Get('/search')
-  search(@Query() search): Record<string, any> {
+  @Post('/search')
+  @HttpCode(204) // 状态码
+  @Header('Cache-Control', 'none') //  响应头设置
+  @Header('user-id', '10086') //  响应头设置
+  search(
+    @Query() search,
+    @Req() request: Request,
+    @Body() body: any,
+  ): Record<string, any> {
     console.log(search);
+    // console.log(request);
+    console.log(body);
     return {
+      body: body,
       keyword: search,
       t: Date.now(),
     };
