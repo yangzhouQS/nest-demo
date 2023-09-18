@@ -105,9 +105,11 @@ export class AppController {
 
 
 
+## 提供者
 
+提供者是 Nest 中的一个基本概念。 许多基本的 Nest 类可以被视为提供者 – 服务、存储库、工厂、助手等。 提供者的主要思想是它可以是 **injected** 作为依赖； 这意味着对象之间可以创建各种关系，并且对象的 "接线" 实例的功能可以在很大程度上委托给 Nest 运行时系统。
 
-
+ ![img](asset/README/Components_1.png) 
 
 
 
