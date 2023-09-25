@@ -47,4 +47,20 @@ export class AppController {
       t: Date.now(),
     };
   }
+
+
+
+
+  @Post('/mp-configuration/get-custom-config')
+  getCustomConfig() {
+    return this.appService.getCustomConfig();
+  }
+  @Post('/mp-configuration/table-config-panel')
+  getTableConfigPanel() {
+    return this.appService.getTableConfigPanel();
+  }
+  @Post('/assem/page-assem-models')
+  getAssemModel() {
+    return this.appService.getAssemModel();
+  }
 }
