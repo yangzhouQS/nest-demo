@@ -11597,6 +11597,28 @@ export class AppService {
     };
   }
 
+  getPrintConfigPanel() {
+    return {
+      code: 201,
+      status: 'success',
+      result: {
+        content:
+          '{"ghName":{"name":"ghName","comment":{"editable":true},"isShow":{"editable":true},"width":{"editable":true},"fixed":{"editable":true},"align":{"editable":false},"sort":{"editable":true}},"ghFullName":{"name":"ghFullName","comment":{"editable":true},"isShow":{"editable":true},"width":{"editable":true},"fixed":{"editable":true},"align":{"editable":false},"sort":{"editable":true}},"orgName":{"name":"orgName","comment":{"editable":true},"isShow":{"editable":true},"width":{"editable":true},"fixed":{"editable":true},"align":{"editable":false},"sort":{"editable":true}}}',
+        level: 3,
+        path: '0_0',
+        remark: '工号计划表格配置',
+        moduleId: 'Sg0MgIjEoP5Hy47T0B0G5',
+        modelId: 'qWReCjXsea7dxMiN7eNvF',
+        modelName: '工号计划模型',
+        tableCode: 'ghCheckTableConfig',
+        permissionJson:
+          '{"ghName":{"name":"ghName","comment":{"editable":{"value":true,"isEnable":true}},"isShow":{"editable":{"value":true,"isEnable":true}},"width":{"editable":{"value":true,"isEnable":true}},"fixed":{"editable":{"value":true,"isEnable":true}},"align":{"editable":{"value":false,"isEnable":false}},"sort":{"editable":{"value":true,"isEnable":true}}},"ghFullName":{"name":"ghFullName","comment":{"editable":{"value":true,"isEnable":true}},"isShow":{"editable":{"value":true,"isEnable":true}},"width":{"editable":{"value":true,"isEnable":true}},"fixed":{"editable":{"value":true,"isEnable":true}},"align":{"editable":{"value":false,"isEnable":false}},"sort":{"editable":{"value":true,"isEnable":true}}},"orgName":{"name":"orgName","comment":{"editable":{"value":true,"isEnable":true}},"isShow":{"editable":{"value":true,"isEnable":true}},"width":{"editable":{"value":true,"isEnable":true}},"fixed":{"editable":{"value":true,"isEnable":true}},"align":{"editable":{"value":false,"isEnable":false}},"sort":{"editable":{"value":true,"isEnable":true}}}}',
+        valueJson:
+          '{"ghName":{"name":"ghName","type":"String","isEnable":true,"sysComment":"工号名称","comment":{"value":"工号名称"},"isShow":{"value":true},"width":{"value":100},"align":{"value":"left"},"fixed":{"value":""},"sort":{"custom":true,"value":false},"columnSort":0},"ghFullName":{"name":"ghFullName","type":"String","isEnable":true,"sysComment":"工号全称","comment":{"value":"工号全称"},"isShow":{"value":true},"width":{"value":100},"align":{"value":"left"},"fixed":{"value":""},"sort":{"custom":true,"value":false},"columnSort":1},"orgName":{"name":"orgName","type":"String","isEnable":true,"sysComment":"组织机构名称","comment":{"value":"组织机构名称"},"isShow":{"value":true},"width":{"value":100},"align":{"value":"left"},"fixed":{"value":""},"sort":{"custom":true,"value":false},"columnSort":2}}',
+      },
+    };
+  }
+
   getAssemModel() {
     return {
       code: 200,

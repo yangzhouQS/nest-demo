@@ -59,6 +59,10 @@ export class AppController {
   getTableConfigPanel() {
     return this.appService.getTableConfigPanel();
   }
+  @Post('/mp-configuration/print-config-panel')
+  getPrintConfigPanel() {
+    return this.appService.getPrintConfigPanel();
+  }
   @Post('/assem/page-assem-models')
   getAssemModel() {
     return this.appService.getAssemModel();
